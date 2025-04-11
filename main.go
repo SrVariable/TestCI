@@ -1,6 +1,7 @@
 package main
 
 import (
+	"os"
 	"fmt"
 )
 
@@ -19,4 +20,5 @@ func main() {
 	fmt.Println(add(nums...))
 	    fmt.Println(add(nums[3:]...))
 	fmt.Println(add(nums[:3]...))
+	fmt.Println(os.Args)
 }
